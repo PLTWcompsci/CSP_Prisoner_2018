@@ -7,16 +7,27 @@
 ####
 
 team_name = 'Dee' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
+strategy_name = 'Threes Company'
 strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
-    ''' Arguments accepted: my_history, their_history are strings.
-    my_score, their_score are ints.
-    
+    '''    
     Make my move.
     Returns 'c' or 'b'. 
     '''
+    count = 0
+    for i in range(-3,0):
+        if their_history[i] == 'b':
+            count +=1
+    
+    if count >= 2:
+        return 'b'
+    else:
+        return 'c'
+        
+        
+        
+
 
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
     # their_history: a string of the same length as history, possibly empty. 

@@ -20,4 +20,4 @@ Now you are ready to bring your code into the main branch of the teacher's repo.
 1. Click the 'Fetch Origin' tab/icon at the top of the page.
 
 ### Run the Tournament
-1. (REWRITE) Sync your code up with the master repo, so that you now have everyone's code on your device. 
+At this point your instructor should be ready to the run the tournament from the master branch on his/her machine. If you want students to be able to run the same tournament on their on devices, they need to update their FORK with the changes that were pulled in from everyone in the class. This would need to be done in the Git Terminal, and the directions can now be found on the official Github documentation here: [Github Syncing a Fork] (https://help.github.com/articles/syncing-a-fork/)

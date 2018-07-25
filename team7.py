@@ -8,11 +8,21 @@
 
 team_name = 'MarilinMas' # Only 10 chars displayed.
 strategy_name = 'D.N.M.E.'
-strategy_description ='Play nice'
+strategy_description ='Play nice, unless betrayed in last 5 rounds.'
     
 def move(my_history, their_history, my_score, their_score):
-    if len(my_history)==0: #Collude in round 1. 
+    
+    if len(my_history)<=5: #collude first 5 rounds
         return 'c'
+    
+    if 'b' in their_history[-5:]: #check last 5 moves for betrayals and return betrayal if true.
+        return 'b'
+        
+    else: #otherwise return collude.
+        return 'c'
+    
+        
+        
 
         
 

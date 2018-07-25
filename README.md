@@ -18,7 +18,8 @@ Now you are ready to bring your code into the main branch of the teacher's repo.
 3. Click the 'Pull Request' button in the top right corner, and submit a request to the main repository. This will bring your code into the main branch.
 ##### New Version:
 1. Click the 'Fetch Origin' tab/icon at the top of the page.
-2. Directions not finished for this section.....
+2. On top toolbar, choose 'Branch' and then 'Create Pull Request'
+3. This will take you to the Github website. Click the green button to submit a pull request, and then confirm that you want to submit the request.
 
 ### Run the Tournament
 Once all students have submitted 'Pull Requests', and the teacher has accepted them into the main code base, the tournament is ready to be run from the master branch on his/her machine. If you want students to be able to run the same tournament on their own devices, they need to update their FORK with the changes that were pulled in from everyone in the class. This would need to be done in the Git Terminal, and the directions can now be found on the official Github documentation here: [Github Syncing a Fork] (https://help.github.com/articles/syncing-a-fork/)

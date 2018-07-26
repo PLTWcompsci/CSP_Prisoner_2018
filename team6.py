@@ -8,26 +8,33 @@
 
 team_name = 'Brandon' # Only 10 chars displayed.
 strategy_name = 'Total World Domination'
-strategy_description = 'Betray all day, every day'
+strategy_description = 'Playing The Percentages'
     
 def move(my_history, their_history, my_score, their_score):
-    #First round collude
-    if len(my_history) == 0:
+    opp_b = 0
+    opp_c = 0
+    
+    if len(my_history) < 10:
         return 'c'
-        
-    if len(my_history) % 2 == 0:
-        return 'c'
-    else:
+    elif len(my_history) < 20:
         return 'b'
-        
-
-
-    
-    
-    
-    
-    
-    
+    else:
+        for choice in their_history:
+            if choice == 'b':
+                opp_b += 1
+            else:
+                opp_c += 1
+                
+        if opp_c != 0:
+            percentage = float(opp_b)/opp_c
+        else:
+            return 'b'
+            
+        if percentage >= 1:
+            return 'b'
+        else:
+            return 'c'
+          
     
     
 def test_move(my_history, their_history, my_score, their_score, result):
